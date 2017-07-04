@@ -3,7 +3,7 @@ package week6
 import org.scalatest._
 import scala.io.Source._
 
-class hackassemblerSpec extends FlatSpec {
+class HackAssemblerSpec extends FlatSpec {
   it should "should generate the example file properly" in {
     val testProg = "Prog"
     Main.main(Array(testProg))
