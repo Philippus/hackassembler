@@ -31,6 +31,8 @@ object Main {
       var offset = 16
       var instruction = ""
       val resultFileName = fileNamePrefix + ".hack"
+      val dir = new File("data/out/")
+      if (!dir.exists()) dir.mkdir()
       val resultFile = new PrintWriter("data/out/" + resultFileName)
       for (line <- fromFile("data/in/" + fileNamePrefix + ".asm").getLines)
         if (!lineIsEmptyOrRemark(line)) {
