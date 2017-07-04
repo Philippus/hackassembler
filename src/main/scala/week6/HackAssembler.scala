@@ -6,7 +6,10 @@ import scala.io.Source._
 
 object Main {
   def main(args: Array[String]) {
-    for (fileNamePrefix <- List("Add", "Max", "Rect", "Pong")) assemble(fileNamePrefix)
+    if (args.isEmpty)
+      for (fileNamePrefix <- List("Add", "Max", "Rect", "Pong")) assemble(fileNamePrefix)
+    else
+      for (fileNamePrefix <- args.toList) assemble(fileNamePrefix)
   }
 
   def assemble(fileNamePrefix: String) = {
