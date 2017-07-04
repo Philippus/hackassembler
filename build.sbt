@@ -1,4 +1,4 @@
-name := "Nand2tetris - week 6"
+name := "Hack Assembler - From NAND to Tetris- project 6"
 
 version := "1.0"
 
