@@ -1,7 +1,8 @@
 package week6
 
-import scala.io.Source._
 import java.io._
+
+import scala.io.Source._
 
 object Main {
   def main(args: Array[String]) {
